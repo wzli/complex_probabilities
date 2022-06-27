@@ -1,5 +1,5 @@
 ## Theory
-Oscillations occur when there negative eigenvalues in the stochastic transition matrix. The continous extension of each transformation then results in complex valued probabilites.
+Oscillations occur when there are negative eigenvalues in the stochastic transition matrix. The continous extension of each transformation then results in complex valued probabilites.
 For a stocastic matrix, there always one eigenvalue of 1, and all others fall between [-1, 1]. For a two state system, a negative eigenvalue results when `a + b < 1`, where a and a are the self transition probabilities of each state.
 
 
@@ -33,3 +33,8 @@ Eigenvectors
 ```
 
 ![Probability State Trajectory](plot.svg)
+
+### Usage
+First install rust and cargo.
+`cargo run (-- --help)`
+Outputs to `plot.svg`.
