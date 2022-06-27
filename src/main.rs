@@ -48,7 +48,11 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let mut traj = Vec::new();
     for k in 0..(args.nth_root * args.cycles + 1) {
         // compute the diagonal matrix to the power of k
-        let theta = (k as f64) * std::f64::consts::PI / (args.nth_root as f64);
+        let theta = if d[1] < 0. {
+            (k as f64) * std::f64::consts::PI / (args.nth_root as f64)
+        } else {
+            0.
+        };
         let dk = na::Complex::new(theta.cos(), theta.sin())
             .scale(d[1].abs().powf((k as f64) / (args.nth_root as f64)));
         // compute k'th state in eigen basis
