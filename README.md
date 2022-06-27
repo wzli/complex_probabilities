@@ -34,7 +34,7 @@ Eigenvectors
 
 ![Probability State Trajectory](plot.svg)
 
-The red line represents the space of real probabilities where `P(A) + P(B) = 1`.
+The red line represents the space of real probabilities where `P(A) + P(B) = 1`. The green line represents the asymptotic eigenvector corresponding to eigenvalue 1.
 
 ### Usage
 First install rust and cargo.
