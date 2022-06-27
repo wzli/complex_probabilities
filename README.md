@@ -32,4 +32,4 @@ Eigenvectors
   └    ┘
 ```
 
-[Probability State Trajectory](plot.svg)
+![Probability State Trajectory](plot.svg)
